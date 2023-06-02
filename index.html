@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- Sign-up form start -->
+
+    <!-- Stay updated! Join 60,000+ product managers receiving monthly updates on:
+    Product discovery and building what matters Measuring to ensure updates are
+    a success And much more! Email address email@company.com Subscribe to
+    monthly newsletter
+
+    // Sign-up form end -->
+
+    <!-- Success message start -->
+
+    <!-- Thanks for subscribing! A confirmation email has been sent to
+    ash@loremcompany.com. Please open it and click the button inside to confirm
+    your subscription. Dismiss message -->
+
+    <!-- Success message end -->
+    <div
+      class="w-[100vw] grid justify-center items-center h-[100vh] bg-[#35384d] font-sans"
+    >
+      <div
+        class="w-[90vmin] h-[65%] bg-blue grid grid-cols-2 rounded-xl border-2 text-[14px] bg-white"
+      >
+        <div class="pr-0 pl-10 py-16 grid items-center">
+          <h1 class="text-[48px] font-bold">Stay Updated</h1>
+          <p class="">
+            Join 60,000+ product managers receiving monthly updates on:
+          </p>
+          <div>
+            <div class="flex gap-3 flex-row mb-2">
+              <img src="./assets/images/icon-list.svg" alt="" />
+              <p>Product discovery and building what matters</p>
+            </div>
+            <div class="flex gap-3 flex-row mb-2">
+              <img src="./assets/images/icon-list.svg" alt="" />
+              <p>Measuring to ensure updates are a success</p>
+            </div>
+            <div class="flex gap-3 flex-row mb-2">
+              <img src="./assets/images/icon-list.svg" alt="" />
+              <p>And much more!</p>
+            </div>
+          </div>
+          <div class="mt-4">
+            <p class="font-bold text-[10px] mb-1">Email address</p>
+            <input
+              class="border-2 rounded-md p-2 w-[90%]"
+              type="email"
+              value=""
+              placeholder="email@company.com"
+            />
+            <button
+              class="border-2 rounded-md p-2 w-[90%] mt-4 bg-[#232742] text-white"
+            >
+              Subscribe to monthly newsletter
+            </button>
+          </div>
+        </div>
+        <div class="p-4 grid items-center">
+          <img
+            class="h-full"
+            src="./assets/images/illustration-sign-up-desktop.svg"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
