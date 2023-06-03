@@ -35,8 +35,11 @@ const validate = () => {
   }
 };
 const dismissFunction = () => {
+  var error = document.getElementById("error-message");
   var input = document.getElementById("emailInput");
   var popup = document.getElementById("popup-display");
   popup.classList.add("hidden");
   input.value = "";
+  input.classList.remove("border-red-500", "bg-[#ffe8e6]");
+  error.textContent = "";
 };
