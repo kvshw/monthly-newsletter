@@ -12,9 +12,7 @@
       href="./assets/images/favicon-32x32.png"
     />
 
-    <title>
-      Frontend Mentor | Newsletter sign-up form with success message
-    </title>
+    <title>Kavishwa's newsletter</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
@@ -71,14 +69,25 @@
             </div>
           </div>
           <div class="mt-4">
-            <p class="font-bold text-[10px] mb-1">Email address</p>
+            <div class="grid grid-cols-3 w-[90%]">
+              <p class="font-bold text-[10px] mb-1">Email address</p>
+              <div class=""></div>
+              <p
+                id="error-message"
+                class="font-bold text-[10px] mb-1 text-end text-[#ff0000]"
+              ></p>
+            </div>
             <input
+              id="emailInput"
               class="border-2 rounded-md p-2 w-[90%]"
-              type="email"
+              type="text"
               value=""
               placeholder="email@company.com"
             />
             <button
+              id="email-submit"
+              onclick="validate()"
+              type="button"
               class="border-2 rounded-md p-2 w-[90%] mt-4 bg-[#232742] text-white"
             >
               Subscribe to monthly newsletter
@@ -94,5 +103,25 @@
         </div>
       </div>
     </div>
+
+    <div class="grid justify-center bg-[#35384d]">
+      <div class="w-[40vmin] p-6 border-2 rounded-xl p-2 bg-white">
+        <img class="w-10" src="./assets/images/icon-list.svg" alt="" />
+        <h1 class="text-[48px] font-bold">Thanks for subscribing</h1>
+        <p class="text-xs">
+          confirmation email has been sent to ash@loremcompany.com. Please open
+          it and click the button inside to confirm your subscription.
+        </p>
+        <button
+          id="dismiss-button"
+          type="button"
+          class="border-2 rounded-md p-2 w-[90%] mt-4 bg-[#232742] text-white text-xs"
+        >
+          Subscribe to monthly newsletter
+        </button>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
   </body>
 </html>
