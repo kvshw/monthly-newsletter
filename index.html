@@ -102,23 +102,25 @@
           />
         </div>
       </div>
-    </div>
-
-    <div class="grid justify-center bg-[#35384d]">
-      <div class="w-[40vmin] p-6 border-2 rounded-xl p-2 bg-white">
-        <img class="w-10" src="./assets/images/icon-list.svg" alt="" />
-        <h1 class="text-[48px] font-bold">Thanks for subscribing</h1>
-        <p class="text-xs">
-          confirmation email has been sent to ash@loremcompany.com. Please open
-          it and click the button inside to confirm your subscription.
-        </p>
-        <button
-          id="dismiss-button"
-          type="button"
-          class="border-2 rounded-md p-2 w-[90%] mt-4 bg-[#232742] text-white text-xs"
+      <div id="popup-display" class="bg-zinc-950/50 h-full w-full fixed hidden">
+        <div
+          class="w-[40vmin] p-6 border-2 rounded-xl p-2 bg-white absolute top-[30%] left-[40%]"
         >
-          Subscribe to monthly newsletter
-        </button>
+          <img class="w-10" src="./assets/images/icon-list.svg" alt="" />
+          <h1 class="text-[48px] font-bold">Thanks for subscribing</h1>
+          <p class="text-xs">
+            confirmation email has been sent to contact@kvshw.com. Please open
+            it and click the button inside to confirm your subscription.
+          </p>
+          <button
+            onclick="dismissFunction()"
+            id="dismiss-button"
+            type="button"
+            class="border-2 rounded-md p-2 w-[90%] mt-4 bg-[#232742] text-white text-xs"
+          >
+            Dissmiss message
+          </button>
+        </div>
       </div>
     </div>
 

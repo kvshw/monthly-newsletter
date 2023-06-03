@@ -22,13 +22,21 @@ const validate = () => {
   var value = input.value;
   var regx = /^([a-z0-9._]+)@([a-z0-9-]+\.)*([a-z0-9-]+\.[a-z]+)$/;
   var error = document.getElementById("error-message");
+  var popup = document.getElementById("popup-display");
 
   if (regx.test(value)) {
-    alert("Provided a valid email");
+    popup.classList.remove("hidden");
+
     return true;
   } else {
     input.classList.add("border-red-500", "bg-[#ffe8e6]");
     error.textContent = "Valid email required";
     return false;
   }
+};
+const dismissFunction = () => {
+  var input = document.getElementById("emailInput");
+  var popup = document.getElementById("popup-display");
+  popup.classList.add("hidden");
+  input.value = "";
 };
